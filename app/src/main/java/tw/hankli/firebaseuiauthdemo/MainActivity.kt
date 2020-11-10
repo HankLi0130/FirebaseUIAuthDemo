@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onUserSignedOut() {
-        view_label.text = ""
+        view_label.text = null
         view_btn.setText(R.string.sign_in)
         view_btn.setOnClickListener { signIn() }
     }
